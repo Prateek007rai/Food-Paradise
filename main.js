@@ -82,7 +82,7 @@ random.addEventListener('click' , function(e){
     mealList.innerHTML = '';
     input.value ='';
     errorText.innerHTML = '';
-    for(let i =0 ; i<4 ;i++ ){
+    for(let i =0 ; i<9 ;i++ ){
         
     fetch('https://www.themealdb.com/api/json/v1/1/random.php')
 		.then(res => res.json())
