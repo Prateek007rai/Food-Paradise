@@ -3,6 +3,7 @@ let mealList = document.querySelector('#list');
 let errorText = document.querySelector('#error-text');
 let submit = document.querySelector('.search');
 let random = document.querySelector('.random');
+let fav = document.querySelector('#fav');
 let greet = document.querySelector('#greet');
 
 
@@ -37,6 +38,7 @@ function getMealList(){
                         </div>
                         <div class = "meal-name">
                             <h3>${meal.strMeal}</h3>
+                            <p id="inst">${meal.strInstructions}</p>
                         </div>
                     </div>
                 
@@ -69,12 +71,13 @@ function greeting(){
 
 
 // random search food item
-random.addEventListener('click' , function(){
+random.addEventListener('click' , function(e){
 
+    e.preventDefault();
     mealList.innerHTML = '';
     input.value ='';
     errorText.innerHTML = '';
-    for(let i =0 ; i<20 ;i++ ){
+    for(let i =0 ; i<11 ;i++ ){
         
     fetch('https://www.themealdb.com/api/json/v1/1/random.php')
 		.then(res => res.json())
@@ -87,8 +90,9 @@ random.addEventListener('click' , function(){
                                     <div class = "meal-img">
                                         <img src = "${meal.strMealThumb}" alt = "food">
                                     </div>
-                                    <div class = "meal-name">
+                                    <div class = "meal-name" id="back">
                                         <h3>${meal.strMeal}</h3>
+                                        <p id="inst">${meal.strInstructions}</p>
                                     </div>
                                </div>
                     `;           
@@ -97,6 +101,7 @@ random.addEventListener('click' , function(){
 
             }
 
+            greeting();
             mealList.innerHTML += html;
 		});
     }
