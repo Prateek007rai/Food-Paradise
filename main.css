@@ -1,0 +1,129 @@
+*{
+    margin: 0ch;
+    background-color: rgb(255, 234, 118);
+}
+#outer-div{
+    margin: auto;
+    width: 100vw;
+    height: auto; min-height: 100vh;
+    /* background-color: rgb(255, 234, 118); */
+    /* position: fixed; */
+}
+
+/* Input-Div starts */
+#meal-header{
+    color: #800080;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 600;
+    font-size: 50px;
+    padding-top: 20px;
+}
+.para{
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #800080;
+    font-size: 16px;
+}
+
+.meal-input{
+    width: 30vw;
+    height: 35px;
+    margin-left: 500px;
+    margin-top: 20px;
+    border-width: 0ch;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px 0.5px grey;
+    padding: 10px;
+    font-weight: 450;
+    background-color: white;
+}
+.meal-input:focus{
+    outline: none;
+    
+}
+.search{
+    height: 36px;
+    width: 5rem;
+    margin-left: 5px;
+    border-radius: 5px;
+    border-width: 0.2px;
+    background-color: #800080;
+    color: white;
+    font-weight: 600;
+}
+.search:hover{
+    box-shadow: 2px 2px 1px 0.5px grey;
+    opacity: 0.8;
+}
+
+#error-text{
+    font-size: 18px;
+    color: #fc0202;
+    width: max-content;
+    margin: 0 auto;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+#input-div div{
+    text-align: center;
+    margin-top: 20PX;
+}
+
+.random{
+    width: 10rem;
+    height: 35px;
+    margin: auto;
+    background-color: #800080;
+    color: white;
+    border-radius: 5px;
+    font-weight: 600;
+    border-width: 0ch;
+}
+.random:hover{
+    opacity: 0.8;
+    box-shadow: 2px 2px 1px 0.5px grey;
+    outline: none;
+}
+
+
+/* list starts here */
+
+.list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.meal-item{
+    margin: 20px;
+    /* background-color: white; */
+    width: 22vw;
+    height: 45vh;
+}
+.meal-name h3{
+    color: crimson;
+}
+img{
+    height: 30vh;
+    width: 20vw;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 1px black;
+}
+
+
+
+.notFound{
+    text-align: center;
+    margin-top: 20px;
+    color: #fc0202;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#greet{
+    font-size: 30px;
+    color: #650765;
+    padding-top: 80px;
+    font-weight: 700;
+}
