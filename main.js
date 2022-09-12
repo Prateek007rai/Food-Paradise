@@ -143,7 +143,7 @@ function addList(meal){
                                     <button class="delete" onclick="deleteList(${meal.idMeal})">
                                     Delete 
                                     </button>
-                                    < p id="inst">${meal.strInstructions}</p>
+                                    <p id="inst">${meal.strInstructions}</p>
                                 </div>
                             </div>
                             </li>
