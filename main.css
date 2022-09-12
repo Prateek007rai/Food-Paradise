@@ -8,8 +8,7 @@
     margin: auto;
     width: 100vw;
     height: auto; min-height: 100vh;
-    /* background-color: rgb(255, 234, 118); */
-    /* position: fixed; */
+    
 }
 
 /* Input-Div starts */
@@ -70,8 +69,7 @@
 
 #input-div div{
     text-align: center;
-    
-    /* margin-top: 20PX; */
+  
 }
 
 
@@ -184,7 +182,7 @@ img{
     color: #fc0202;
     font-size: 20px;
     font-weight: 500;
-    /* margin-left: 230px; */
+   
 }
 
 
@@ -192,7 +190,6 @@ img{
 /* FAV list starts here */
 #div-list div{
     padding: 0%;
-    /* background-color: rgb(250, 245, 246); */
     border-radius: 10px;
     margin-left: 0;
 }
@@ -204,7 +201,6 @@ img{
     height: auto !important;                  
     margin: auto;
     padding: 8px;
-    /* padding-right: 5rem; */
     padding-left: 1.2rem;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     box-shadow: 3px 3px 3px 1px grey;
@@ -213,13 +209,12 @@ img{
 .fav-list{
     width: 100%;
     height: fit-content !important;
-    /* background-color: rgb(250, 245, 246); */
-    
+   
 }
 
 
 
-/* //style the greetings */
+/* style the greetings */
 #greet{
     font-size: 30px;
     color: #650765;
